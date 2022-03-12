@@ -2,10 +2,12 @@ def isStringPermutation(s1: str, s2: str) -> bool:
     s1list = sorted(s1)
     s2list = sorted(s2)
     if s2list != s1list:
-        print(False)
+        return False
     else:
-        print(True)
-isStringPermutation("asd", "asd")
+        return True
+print(isStringPermutation("asdf", "fsda"))
+print(isStringPermutation("asdf", "fsa"))
+print(isStringPermutation("asdf", "fsax"))
 
 def pairsThatEqualSum(inputArray: list, targetSum: int) -> list:
     diffList = []
@@ -17,6 +19,8 @@ def pairsThatEqualSum(inputArray: list, targetSum: int) -> list:
         for tupl in diffList:
             if tupl == (0, targetSum):
                 diffList.remove(tupl)
-    print(diffList)
+    return(diffList)
 
-pairsThatEqualSum([1,2,3,4,5], 7)
+print(pairsThatEqualSum([1,2,3,4,5], 5))
+print(pairsThatEqualSum([1,2,3,4,5], 1))
+print(pairsThatEqualSum([1,2,3,4,5], 7))
