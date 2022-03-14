@@ -5,7 +5,7 @@ def isStringPermutation(s1: str, s2: str) -> bool:
         return False
     else:
         return True
-    
+  
 print(isStringPermutation("asdf", "fsda"))
 print(isStringPermutation("asdf", "fsa"))
 print(isStringPermutation("asdf", "fsax"))
