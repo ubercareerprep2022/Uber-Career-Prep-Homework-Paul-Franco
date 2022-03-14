@@ -27,7 +27,6 @@ class Stack():
             return min(self.stack)
         else:
             return None
-
 myStack = Stack()
 myStack.push(42)
 print("Top of stack: ", myStack.top())
