@@ -1,5 +1,5 @@
 '''
-    def reverseIteratively(self, head: Node):
+    def reverseIteratively():
         prevNode = None
         currNode = self.head
         while currNode:
